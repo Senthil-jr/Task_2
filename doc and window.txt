@@ -1,0 +1,95 @@
+DOCUMENT OBJECT
+
+    The document object is the html document that appears in the browser window and serves as an interface for interacting 
+with the web pages content.  The browser generates a document object model of a web page upon it.
+
+    The document object model is a logical tree in a document, with a methods allowing programmatic access to change its structure, style,
+or content.
+
+    It manipulation tools offers methods to acccess and manipulate the structure and content of a document such as query.selector(),
+create element(), amd innerhtml. It represents the entire html document as a node tree, with the document object as the root 
+node. It allows dynamic dates and interactions with webpage content.
+
+Properities of document object model
+
+element.innerHTML = new html content   ;  change the inner html of a element
+
+element.attribute = new value          ; change the attribute valueof a html element
+
+Methods:
+
+document.createElement(element)         ;create html element
+
+document.removeChild(element)           ; remove a Html element
+
+
+
+WINDOW OBJECT 
+
+    The window object is a global object in clien side Js, representing the browser window containing a document object model document and 
+acting as a root of the document object model
+
+    window object is supported by all browsers, and represents the browser window and automatically includes global js objects, functions,
+and variables as members
+
+    The window object is responsible for manaing global variables, functions, and objects, providing methods for browser interactions and 
+managing properities related to frames, tabs or window such as alert(), confirm(), settimeout(), setinterval().
+
+Properities
+
+window.innerheight      - inner height of the browser
+
+window.innerwidth       - inner width of the browser
+
+Methods
+
+window.open()       - opena new window
+
+window.close()      - close the current window
+
+window.moveto()     - move the current window
+
+
+
+
+2) Objects in Js
+
+    Object is a data type in javascript. It is similar to array. It is key value pair. Object comes under the reference datatype. Generally data type are 
+classified into two types
+
+1) Primitive datatype - number,string, boolean, null, undefined
+2) Non Primitive datatype - array, object, functions
+
+It is categorized by copy by value and copy by reference.  THe Primitive datatype comes under copy by value and the other comes under
+copy by reference
+
+Example for copy by reference
+
+var a = [2,3,4,5]
+var b=a
+b[1]=6
+
+console.log(a) = 2,6,4,5
+console.log(b) = 2,6,4,5
+
+Example for object in js
+
+var i = {
+    name : "Jr"
+    age : 20
+    phn : 123456
+    address : [
+        {
+            street : 2
+            city : "Chennai"
+        },
+        {
+            street : 3
+            city : "Vellore"
+        }
+    ]
+}
+
+It can be accessed by index number. To access the value of the madurai is followed
+
+i.address[1].city = madurai
